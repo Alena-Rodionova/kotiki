@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱 Породы кошек</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🐾 Породы кошек</h1>
+            <p class="subtitle">Фото, характер, размеры и страна выведения — данные из TheCatAPI</p>
+            <div class="status" id="status">
+                <span class="status-dot"></span>
+                <span id="statusText">Загрузка данных...</span>
+            </div>
+        </header>
+
+        <div class="cards-grid" id="cardsGrid"></div>
+
+        <div class="controls">
+            <button class="btn btn-refresh" id="refreshBtn">🔄 Другие породы</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <img class="modal-img" id="modalImg" alt="">
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <p class="modal-subtitle" id="modalOrigin"></p>
+                <p class="modal-temperament" id="modalTemperament"></p>
+                <div class="modal-stats" id="modalStats"></div>
+                <p class="modal-description" id="modalDescription"></p>
+                <a class="modal-link" id="modalLink" target="_blank" rel="noopener">Подробнее →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
